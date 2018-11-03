@@ -1,0 +1,8 @@
+name: EcoWorldAuth
+main: jp.minecraftuser.ecoworldauth.EcoWorldAuth
+version: ${project.version}
+depend: [EcoFramework]
+commands:
+  ewa:
+    description: ewa command.
+    usage: /<command> option
