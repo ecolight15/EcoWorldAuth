@@ -25,7 +25,7 @@ public class InventoryListener extends ListenerFrame {
      * インベントリを開くイベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void InventoryOpenEvent(InventoryOpenEvent event)
     {
         if (conf.getBoolean("event-logging")) {

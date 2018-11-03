@@ -27,7 +27,7 @@ public class EntityListener extends ListenerFrame {
      * 壁掛け破壊イベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void EntityPickupItemEvent(EntityPickupItemEvent event)
     {
         Entity e = event.getEntity();

@@ -6,3 +6,8 @@ commands:
   ewa:
     description: ewa command.
     usage: /<command> option
+    permission: ecoworldauth
+  ewa reload:
+    description: reload ewa configuration file command.
+    usage: /<command> option
+    permission: ecoworldauth.reload

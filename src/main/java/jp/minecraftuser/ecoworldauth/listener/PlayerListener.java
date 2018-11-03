@@ -31,7 +31,7 @@ public class PlayerListener extends ListenerFrame {
      * アーマースタンド編集イベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void PlayerArmorStandManipulateEvent(PlayerArmorStandManipulateEvent event)
     {
         if (conf.getBoolean("event-logging")) {
@@ -46,7 +46,7 @@ public class PlayerListener extends ListenerFrame {
      * バケツ使用イベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void PlayerBucketEmptyEvent(PlayerBucketEmptyEvent event)
     {
         if (conf.getBoolean("event-logging")) {
@@ -61,7 +61,7 @@ public class PlayerListener extends ListenerFrame {
      * バケツ汲み取りイベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void PlayerBucketFillEvent(PlayerBucketFillEvent event)
     {
         if (conf.getBoolean("event-logging")) {
@@ -76,7 +76,7 @@ public class PlayerListener extends ListenerFrame {
      * アイテムドロップイベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void PlayerDropItemEvent(PlayerDropItemEvent event)
     {
         if (conf.getBoolean("event-logging")) {
@@ -91,7 +91,7 @@ public class PlayerListener extends ListenerFrame {
      * エンティティへの操作イベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void PlayerInteractEntityEvent(PlayerInteractEntityEvent event)
     {
         if (conf.getBoolean("event-logging")) {
@@ -106,7 +106,7 @@ public class PlayerListener extends ListenerFrame {
      * 操作イベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void PlayerInteractEvent(PlayerInteractEvent event)
     {
         if (conf.getBoolean("event-logging")) {
@@ -121,7 +121,7 @@ public class PlayerListener extends ListenerFrame {
      * 矢を拾う際のイベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void PlayerPickupArrowEvent(PlayerPickupArrowEvent event)
     {
         if (conf.getBoolean("event-logging")) {

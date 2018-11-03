@@ -29,7 +29,7 @@ public class HangingListener extends ListenerFrame {
      * 壁掛け破壊イベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void HangingBreakByEntityEvent(HangingBreakByEntityEvent event)
     {
         Entity e = event.getRemover();
@@ -56,7 +56,7 @@ public class HangingListener extends ListenerFrame {
      * 壁掛け設置イベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void HangingPlaceEvent(HangingPlaceEvent event)
     {
         if (conf.getBoolean("event-logging")) {

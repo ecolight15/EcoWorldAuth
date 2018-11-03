@@ -29,7 +29,7 @@ public class BlockListener extends ListenerFrame {
      * ブロック破壊イベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void BlockBreakEvent(BlockBreakEvent event)
     {
         if (conf.getBoolean("event-logging")) {
@@ -44,7 +44,7 @@ public class BlockListener extends ListenerFrame {
      * ブロック破壊イベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void BlockPlaceEvent(BlockPlaceEvent event)
     {
         if (conf.getBoolean("event-logging")) {
@@ -60,7 +60,7 @@ public class BlockListener extends ListenerFrame {
      * BlockBreakと役割は被るが、ダメージ表現ごと無効化する場合にはこちらでガードする
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void BlockDamageEvent(BlockDamageEvent event)
     {
         if (conf.getBoolean("event-logging")) {
@@ -75,7 +75,7 @@ public class BlockListener extends ListenerFrame {
      * ブロック着火イベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void BlockIgniteEvent(BlockIgniteEvent event)
     {
         if (event.getCause().equals(IgniteCause.FLINT_AND_STEEL)) {

@@ -31,7 +31,7 @@ public class VehicleListener extends ListenerFrame {
      * 乗り物ダメージイベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void VehicleDamageEvent(VehicleDamageEvent event)
     {
         Entity e = event.getAttacker();
@@ -58,7 +58,7 @@ public class VehicleListener extends ListenerFrame {
      * 乗り物破壊イベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void VehicleDestroyEvent(VehicleDestroyEvent event)
     {
         Entity e = event.getAttacker();
@@ -85,7 +85,7 @@ public class VehicleListener extends ListenerFrame {
      * 乗り物乗車イベント処理
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void VehicleEnterEvent(VehicleEnterEvent event)
     {
         Entity e = event.getEntered();
@@ -104,7 +104,7 @@ public class VehicleListener extends ListenerFrame {
      * このメソッドでは、自分が車両に対してぶつかった際の権限を判定する（乗っている側ではない）
      * @param event イベント情報
      */
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void VehicleEntityCollisionEvent(VehicleEntityCollisionEvent event)
     {
         Entity e = event.getEntity();
