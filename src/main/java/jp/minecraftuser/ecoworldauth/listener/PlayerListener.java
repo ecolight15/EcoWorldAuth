@@ -3,6 +3,7 @@ package jp.minecraftuser.ecoworldauth.listener;
 
 import jp.minecraftuser.ecoframework.PluginFrame;
 import jp.minecraftuser.ecoframework.ListenerFrame;
+import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerArmorStandManipulateEvent;
 import org.bukkit.event.player.PlayerBucketEmptyEvent;
@@ -99,6 +100,20 @@ public class PlayerListener extends ListenerFrame {
         }
         if (!event.getPlayer().isPermissionSet("ewa.player.interact_entity")) {
             event.setCancelled(true);
+        }
+    }
+
+    /**
+     * アイテムフレームへの操作イベント処理
+     * @param event イベント情報
+     */
+    @EventHandler(ignoreCancelled = true)
+    public void PlayerInteractFrameEvent(PlayerInteractEntityEvent event)
+    {
+        if (event.getRightClicked().getType().equals(EntityType.ITEM_FRAME)) {
+            if (!event.getPlayer().isPermissionSet("ewa.player.interact_entity_frame")) {
+                event.setCancelled(true);
+            }
         }
     }
 
