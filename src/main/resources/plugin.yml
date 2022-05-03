@@ -1,6 +1,7 @@
 name: EcoWorldAuth
 main: jp.minecraftuser.ecoworldauth.EcoWorldAuth
 version: ${project.version}
+api-version: 1.18
 depend: [EcoFramework]
 commands:
   ewa:
