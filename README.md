@@ -18,7 +18,7 @@ EcoWorldAuth は、Minecraft/Spigot サーバー向けの包括的な権限制�
 
 ## インストール
 
-1. [EcoFramework](http://ecolight15.github.io/mvn_rep/) をダウンロードしてサーバーの `plugins` フォルダに配置
+1. [EcoFramework](https://github.com/ecolight15/EcoFramework) をダウンロードしてサーバーの `plugins` フォルダに配置
 2. EcoWorldAuth プラグインファイルを `plugins` フォルダに配置
 3. サーバーを再起動
 
@@ -158,7 +158,7 @@ GNU Lesser General Public License v3.0
 
 ## 関連プロジェクト
 
-- [EcoFramework](http://ecolight15.github.io/mvn_rep/) - 本プラグインの基盤フレームワーク
+- [EcoFramework](https://github.com/ecolight15/EcoFramework) - 本プラグインの基盤フレームワーク
 
 ## サポート
 
